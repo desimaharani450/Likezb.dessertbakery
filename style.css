@@ -1,0 +1,129 @@
+body {
+  background-color: #eef3fb;
+  font-family: "sans-serif";
+}
+
+.navbar {
+  background-color: #0b3c5d;
+}
+.navbar .nav-link {
+  color: #ffffff !important;
+}
+.navbar .nav-link:hover {
+  color: #acdff3 !important;
+}
+.navbar .navbar-brand {
+  color: #acdff3 !important;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  text-align: center;
+  margin: 50px auto;
+  color: #ffffff;
+  background-color: #0d3b66;
+  border-radius: 50px;
+  padding: 14px 30px;
+  display: inline-block;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(13, 59, 102, 0.3);
+}
+
+.menu-card {
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #0b3c5d;
+  border: none;
+  transition: transform 0.3s;
+}
+.menu-card:hover {
+  transform: translateY(-10px);
+}
+.menu-card img {
+  border-radius: 12px;
+  height: 200px;
+  object-fit: cover;
+}
+.menu-card h6 {
+  margin-top: 15px;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.about-img {
+  max-height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-pesan {
+  background-color: #acdff3;
+  color: #073436;
+  border-radius: 20px;
+  font-weight: bold;
+  border: none;
+  padding: 8px 20px;
+}
+.btn-pesan:hover {
+  background-color: rgb(127.4421052632, 205.8210526316, 236.5578947368);
+}
+
+.accordion-button {
+  color: #0b3c5d;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #acdff3;
+  color: #0b3c5d;
+}
+.accordion-button:focus {
+  border-color: #acdff3;
+  box-shadow: 0 0 0 0.25rem rgba(172, 223, 243, 0.25);
+}
+
+#testimoni .carousel-item {
+  padding: 40px 80px;
+}
+#testimoni .carousel-item p {
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+iframe {
+  border: 0;
+}
+
+footer {
+  background-color: #0b3c5d;
+}
+footer .text-accent {
+  color: #acdff3;
+}
+footer a:hover {
+  color: #acdff3 !important;
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=style.css.map */
