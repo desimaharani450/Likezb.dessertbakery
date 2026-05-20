@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likezblu - Dessert & Bakery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Likezblu - Dessert & Bakery</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background-color: #f8fbff;
+        }
+
+        .navbar {
+            background-color: #0b3c5d;
+            padding: 15px 0;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: white !important;
+        }
+
+        .nav-link:hover {
+            color: #9fd3ff !important;
+        }
+
+        .hero {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        .hero-box {
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-title {
+            font-weight: bold;
+            color: #0b3c5d;
+        }
+
+        .about-img {
+            max-height: 450px;
+            object-fit: cover;
+        }
+
+        .menu-card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .menu-card h6 {
+            padding-top: 15px;
+            font-weight: bold;
+        }
+
+        .btn-pesan {
+            background-color: #0b3c5d;
+            color: white;
+            border-radius: 30px;
+            padding: 8px 25px;
+            border: none;
+        }
+
+        .btn-pesan:hover {
+            background-color: #145b89;
+            color: white;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.03);
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #dff1ff;
+            color: #0b3c5d;
+        }
+
+        footer {
+            background-color: #08293f;
+        }
+
+        .text-accent {
+            color: #9fd3ff;
+        }
+
+        @media (max-width: 768px) {
+
+            .hero h1 {
+                font-size: 30px !important;
+            }
+
+            .hero p {
+                font-size: 18px !important;
+            }
+
+            .gallery-img {
+                height: 220px;
+            }
+
+            .menu-card img {
+                height: 180px;
+            }
+        }
+
+    </style>
+</head>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Likezblu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kontak">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="home">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="hero" style="background-image:url('https://i.pinimg.com/736x/6d/a7/59/6da759b8600a739623e19c48f25afc81.jpg')">
+  <div class="overlay"></div>
+
+  <div class="hero-box text-center">
+            <h1 class="display-3 fw-bold rounded-pill shadow " style="background: rgba(133, 177, 207, 0.6); backdrop-filter: blur(1px); -webkit-backdrop-filter: blur(1px); border: 1px solid rgba(69, 90, 158, 0.2);color: white; font-size: 45px; padding: 10px;">Welcome to Likezblu</h1>
+            <p class="fs-4 bg-primary-dark d-inline-block px-4 py-2 rounded-pill shadow" style="background: rgba(133, 177, 207, 0.6); backdrop-filter: blur(1px); -webkit-backdrop-filter: blur(1px); border: 1px solid rgba(69, 90, 158, 0.2); color: white;">Living for the little moments</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="hero" style="background-image: url('https://i.pinimg.com/1200x/f5/dc/de/f5dcde257dc627bfdb51acfed2d8b111.jpg') ">
+          <div class="hero-box text-center" >
+            <h1 class="display-3 fw-bold rounded-pill shadow " style="background: rgba(133, 177, 207, 0.6); backdrop-filter: blur(1px); -webkit-backdrop-filter: blur(1px); border: 1px solid rgba(69, 90, 158, 0.2);color: white;">Likezblu</h1>
+            <p class="fs-4 bg-primary-dark d-inline-block px-4 py-2 rounded-pill shadow" style="background: rgba(133, 177, 207, 0.6); backdrop-filter: blur(1px); -webkit-backdrop-filter: blur(1px); border: 1px solid rgba(69, 90, 158, 0.2); color: white;">Sweetness in every blue moon.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<section id="about" class="py-5 container text-center">
+    <h2 class="section-title">Tentang Kami</h2>
+    <div class="row align-items-center mt-4">
+        <div class="col-md-6">
+            <img src="https://i.pinimg.com/736x/c1/1d/92/c11d92c5b5b861cc862a9f46fada3ebb.jpg" 
+                 class="img-fluid rounded shadow about-img" alt="About Likezblu">
+        </div>
+        <div class="col-md-6 text-start p-4">
+            <h3>Kelezatan di Setiap Gigitan</h3>
+            <p>Likezblu adalah rumah bagi para pecinta hidangan penutup premium. Berawal dari dapur kecil di Tanjung Biru, kami berkomitmen menyajikan kebahagiaan melalui cheesecake dan artisan cake lainnya menggunakan bahan-bahan segar pilihan.</p>
+        </div>
+    </div>
+</section>
+
+<section id="menu" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="section-title">Daftar Produk</h2>
+        <div class="row g-4 mt-2">
+            <div class="col-md-4 col-6">
+                <div class="card menu-card h-100">
+                    <img src="https://thenovicechefblog.com/wp-content/uploads/2023/10/Lemon-Cheesecake-14.jpeg" class="card-img-top">
+                    <h6>Lemon Cheesecake</h6>
+                    <button class="btn btn-pesan mx-auto mb-3">Pesan</button>
+                </div>
+            </div>
+            <div class="col-md-4 col-6">
+                <div class="card menu-card h-100">
+                    <img src="https://ashbaber.com/wp-content/uploads/2024/02/Brownie-cheesecake-slice-small.jpg" class="card-img-top">
+                    <h6>Brownie Cheesecake</h6>
+                    <button class="btn btn-pesan mx-auto mb-3">Pesan</button>
+                </div>
+            </div>
+            <div class="col-md-4 col-6">
+                <div class="card menu-card h-100">
+                    <img src="https://i.pinimg.com/736x/c1/1d/92/c11d92c5b5b861cc862a9f46fada3ebb.jpg" class="card-img-top">
+                    <h6>Fruit Sando</h6>
+                    <button class="btn btn-pesan mx-auto mb-3">Pesan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="py-5 container text-center">
+    <h2 class="section-title">Portfolio Galeri</h2>
+    <div class="row mt-4">
+        <div class="col-md-4"><img src="https://avocadopesto.com/wp-content/uploads/2010/12/NY-Cheesecake-13.jpg" class="gallery-img"></div>
+        <div class="col-md-4"><img src="https://asset.kompas.com/crops/dmjtEXovHMPooK9yJkdy75bmUS4=/0x0:698x465/1200x800/data/photo/2023/11/10/654dfc1af0231.jpg" class="gallery-img"></div>
+        <div class="col-md-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj2XCTSHaHpOoOrIjDvB80B-mIuu8wRTPbTA&s" class="gallery-img"></div>
+    </div>
+</section>
+
+<section id="kontak" class="py-5 container">
+    <div class="text-center"><h2 class="section-title">Hubungi Kami</h2></div>
+    <div class="row g-4 mt-2">
+        <div class="col-md-6">
+            <h5>Lokasi & Kontak</h5>
+            <p>📍 Jl. Kebonagung RT 14 Tanjung Biru<br>
+               📱 WhatsApp: +62 812 3456 7890<br>
+               📸 Instagram: @likezblu</p>
+            <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mt-3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0!2d106.8!3d-6.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMDAuMCJTIDEwNsKwNDgnMDAuMCJF!5e0!3m2!1sid!2sid!4v1620000000000" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-4 border-0 shadow-sm">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Nama</label>
+                        <input type="text" class="form-control" placeholder="Nama Lengkap">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Pesanan</label>
+                        <textarea class="form-control" rows="3" placeholder="Tulis pesanan Anda"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-pesan w-100">Kirim Pesanan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="py-5 bg-white">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Pertanyaan Sering Diajukan</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="accordion accordion-flush shadow-sm rounded-4 overflow-hidden" id="accordionFAQ">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                Apakah semua menu di Likezblu halal?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body text-muted">Ya, kami hanya menggunakan bahan-bahan premium yang bersertifikat halal.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                Bagaimana sistem pengirimannya?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body text-muted">Kami melayani pengiriman instan (Grab/Gojek) atau pengambilan langsung ke toko (Pick-up).</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Apakah bisa mengirim ke luar kota?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body text-muted">
+                                Saat ini kami hanya melayani pengiriman di area lokal (dalam kota) untuk menjaga tekstur dan kesegaran krim serta buah pada produk kami agar tidak rusak di perjalanan.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                Berapa lama daya simpan kue dari Likezblu?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body text-muted">
+                                Untuk kualitas terbaik, simpan di dalam lemari es. Cheesecake dan Fruit Sando kami tahan hingga 3 hari di pendingin, namun paling nikmat dikonsumsi pada hari yang sama.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimoni" class="py-5" style="background-color: #0b3c5d; color: white;">
+    <div class="container py-5 text-center">
+        <h2 class="section-title text-white bg-transparent border-bottom border-info pb-2">Apa Kata Mereka?</h2>
+        <div id="carouselTesti" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p class="fs-4 italic">"Cheesecake-nya beneran lembut banget, manisnya pas!"</p>
+                    <h5 class="mt-3 fw-bold">- Stevani Crishty</h5>
+                    <div class="text-warning">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="carousel-item">
+                    <p class="fs-4 italic">"Fruit Sando-nya seger, buahnya nggak pelit. Langganan deh!"</p>
+                    <h5 class="mt-3 fw-bold">- Abyan Farrel</h5>
+                    <div class="text-warning">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTesti" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTesti" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<footer class="text-white pt-5 pb-4">
+    <div class="container text-md-start">
+        <div class="row text-md-start">
+            <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fw-bold text-accent">Likezblu</h5>
+                <p>Menyajikan hidangan penutup terbaik dengan sentuhan cinta di setiap gigitannya.</p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fw-bold text-accent">Tautan</h5>
+                <p><a href="#home" class="text-white text-decoration-none">Home</a></p>
+                <p><a href="#menu" class="text-white text-decoration-none">Menu</a></p>
+                <p><a href="#gallery" class="text-white text-decoration-none">Gallery</a></p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fw-bold text-accent">Kontak</h5>
+                <p><i class="fas fa-home mr-3"></i> Tanjung Biru, Indonesia</p>
+                <p><i class="fas fa-envelope mr-3"></i> hello@likezblu.com</p>
+                <p><i class="fas fa-phone mr-3"></i> +62 812 3456 7890</p>
+            </div>
+        </div>
+        <hr class="mb-4">
+        <div class="row align-items-center text-center">
+            <p>© 2026 Likezblu - All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
